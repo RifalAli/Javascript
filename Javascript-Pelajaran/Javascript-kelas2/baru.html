@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <h1 id="ganti">Belajar Javascript</h1>
+    <button onclick="halo()">JavaScript</button>
+
+    <br><br>
+
+    <h1 id="saya">Namaku</h1>
+    <input type="text" id="nama" placeholder="Namamu">
+    <button onclick="nama()">Nama</button>
+
+    <script>
+        function halo() {
+            document.getElementById('ganti').innerHTML = "Haloo";
+        }
+
+        function nama() {
+            document.getElementById('saya').innerHTML = document.getElementById('nama').value;
+        }
+    </script>
+</body>
+</html>
